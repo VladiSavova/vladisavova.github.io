@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/c1f07ac768.js" crossorigin="anonymous"></script>
+    <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
+
+    <title>
+        {% if page.title != 'Home' %}
+            {{ page.title }} - {{ site.title }}
+        {% else %}
+            {{ site.title }}
+        {% endif %}
+    </title>
+    <script>
+        window.addEventListener('load', (event) => {
+            document.querySelector('body').classList.add('loaded');
+        });
+    </script>
+    <!-- <link rel="stylesheet" href="{{ site.baseurl }}/fontawesome/css/all.css"> -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
+  
+</head>
+<body class="page-{{ page.title | slugify }}">
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <div class="site">
+
+        <header class="site-header">
+            <!-- <section class="site-media" style="background-image: url('{{ page.featured_image }}');"></section> -->
+            <div class="site-branding">
+                <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+                <p>{{ site.description }}</p>
+            </div>
+
+            {% include navigation.html location="header" %}
+        </header>
+        
+        <main class="site-main">
+            
+            <h1>{{ page.title }}</h1>
+
+            {{ content }}
+
+        </main>
+
+        <footer class="site-footer">
+                <div class="site-wrapper">
+
+                        <div class="info">
+                            <p>&copy; 2019 Vladi`s project</p> 
+                        </div>
+    
+                        <ul class="social">
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </li>
+                        </ul>
+    
+                    </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+title: My site
+email: vladi_savova6@abv.bg
+description: 
+destination: docs
+baseurl: "/css-project-softuni"
+url: ""
+twitter_username: vladisavova
+github_username: vladisavova
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+exclude:
+  - docs
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - package.json
+  - package-lock.json
+  - gulpfile.js
+  - theme-personal
