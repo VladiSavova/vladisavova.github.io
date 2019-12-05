@@ -16,7 +16,7 @@ gulp.task("sass", function() {
 		.pipe( size() )
 		.pipe( csso() )
 		.pipe( size() )
-		.pipe( gulp.dest( './docs/css/' ) )
+		.pipe( gulp.dest( './css/' ) )
 		.pipe( browserSync.stream({ match: '**/*.css' }) )
 	;
 });
@@ -33,11 +33,11 @@ gulp.task("jekyll", function() {
 
 gulp.task("watch", function() {
 
-	browserSync.init({
-		server: {
-            baseDir: "./docs/"
-		}
-	});
+	// browserSync.init({
+	// 	server: {
+    //         baseDir: "./docs/"
+	// 	}
+	// });
 
 	gulp.watch( '_scss/**/*.scss', gulp.series('sass') );
 
