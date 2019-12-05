@@ -2,7 +2,7 @@ title: My site
 email: vladi_savova6@abv.bg
 description: 
 destination: docs
-baseurl: "/vladisavova.github.io"
+baseurl: "vladisavova.github.io"
 url: ""
 twitter_username: vladisavova
 github_username: vladisavova
