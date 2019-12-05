@@ -1,6 +1,6 @@
 body {
     background: rgba(141, 70, 255, 0.151);
-   background: red;
+    background: red !important;
 }
 
 .site {
@@ -9,7 +9,6 @@ body {
 }
 
 .site-header {
-
     @include bp(mobile) {
         
     }
