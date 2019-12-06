@@ -91,7 +91,7 @@ input:checked + .card .button .less {
 .site-media:before {
 	display: block;
 	content: '';
-	background: rgba(64, 71, 73, 0.8);
+	background: rgba(99, 107, 109, 0.8);
 	position: absolute;
 	top: 0; 
 	left: 0; 
@@ -190,4 +190,10 @@ input:checked + .card .button .less {
 main.site-main{
 
 	padding-bottom: 0.5em;
+}
+
+
+.site-header.site-branding {
+	display: flex;
+	flex-wrap: wrap;
 }
