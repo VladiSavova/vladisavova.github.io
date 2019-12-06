@@ -1,6 +1,6 @@
 body {
     background: rgba(141, 70, 255, 0.151);
-    background: red !important;
+    
 }
 
 .site {
@@ -22,7 +22,7 @@ body {
 }
 
 .site-branding h1 a{
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .card {
@@ -55,22 +55,84 @@ input:checked + .card .button .less {
 
 
 .site-branding h1:hover{
-
+	// transition: transform 3s, opacity 1s;
     @include bp(mobile) {
         
     }
 
     @include bp(desktop) {
-        -webkit-transform: rotateZ(-20deg);
-        -ms-transform: rotateZ(-20deg);
-        transform: rotateZ(-20deg);
+		
         color: black;
-        text-shadow: 0 0 10px black;
+		text-shadow: 0 0 10px black;
+		// transform: scale(1.4);
+		
+	
     }
 
    
 }
-// css for foooter ->
+
+//css for header media
+
+.site-media {
+	min-height: 50vh;
+	overflow: hidden;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2em 0;
+}
+
+
+.site-media:before {
+	display: block;
+	content: '';
+	background: rgba(64, 71, 73, 0.8);
+	position: absolute;
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0;
+}
+
+.site-media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+.site-media .site-wrapper {
+	width: 100%;
+	color: #FFF;
+	position: relative;
+	z-index: 10;
+	font-size: 1.6em;
+	padding-top: 2rem;
+    padding-bottom: 5rem;
+    
+
+	@include bp(desktop) {
+        padding-right: 10em;
+        padding-left: 10em;
+	}
+}
+
+.site-media h2 {
+	font-weight: 700;
+}
+
+.site-media p {
+	font-weight: 400;
+	opacity: 0.8;
+}
+
+
+// css for footer
 .social {
 	display: flex;
 }
@@ -123,6 +185,3 @@ input:checked + .card .button .less {
 .site-footer .site-wrapper p:first-child {
 	font-size: 1.2em;
 }
-
-//css for header media
-
