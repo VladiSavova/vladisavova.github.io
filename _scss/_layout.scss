@@ -131,12 +131,25 @@ input:checked + .card .button .less {
 .site-media p {
 	font-weight: 400;
 	opacity: 0.8;
+	
+}
+.site-media p + p{
+	margin: -1em;
+	
+}
+
+.site-media  p.last {
+	padding-left: 5em;
+}
+.site-media  p.first {
+	padding-left: 3em;
 }
 
 
 // css for footer
 .social {
 	display: flex;
+	
 }
 
 .social li {
@@ -168,6 +181,9 @@ input:checked + .card .button .less {
 	justify-content: space-between;
 	align-items: center;
 	font-size: 1.2em;
+	@include bp(mobile) {
+		width: 100%;
+	}
 }
 
 .site-footer .social a {
@@ -175,9 +191,11 @@ input:checked + .card .button .less {
 	color: #FFF;
 }
 
+
 .site-footer .site-wrapper p {
 	opacity: 0.4;
 	transition: opacity 0.3s ease-in;
+
 }
 
 .site-footer:hover .site-wrapper p {
