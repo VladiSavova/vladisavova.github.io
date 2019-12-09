@@ -6,6 +6,7 @@
 	box-shadow: 0 0 1em 0 rgba(0,0,0,0.1);
 	margin-bottom: 3em;
 	
+	
 	@include bp(mobile) {
 		padding-bottom: 0.1em;
 	}
@@ -16,6 +17,12 @@
 	}
 }
 
+body > div > main > article:nth-child(1) {
+	margin-top: 6em;
+}
+body > div > main > article:nth-child(6) {
+	margin-bottom: -1em;
+}
 .entry-media {
 	position: relative;
 	overflow: hidden;
@@ -52,17 +59,21 @@
 	z-index: 20;
 	box-shadow: 0 0 1.5em 0 rgba(0,0,0,0.07);
 	padding: 2em;
+	margin-bottom: 2em;
 	
 	@include bp(desktop) {
 		flex-grow: 1;
 		margin: 2em 2em 2em -2em;
 	}
 }
-
+body > div > main > article:nth-child(4) > h2 {
+	padding-top: 2em;
+}
 .entry-title {
 	padding-bottom: 0.5rem;
 	font-weight: 500;
 	font-size: 3em;
+	padding-top: 2em;
 }
 
 .entry-title a {
@@ -71,6 +82,9 @@
 
 .entry-meta {
 	margin-bottom: 3em;
+}
+body > div > main > article > div.entry-content > p.entry-meta {
+	margin-bottom: 0;
 }
 
 .entry:nth-child(even) .entry-media {
