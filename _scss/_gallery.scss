@@ -29,7 +29,7 @@
     border:3px solid black;
     opacity: 0.8;
     transition: transform 1s, opacity 1s;
-
+    
     
     
     &:hover {
@@ -40,7 +40,8 @@
             transform: scale(1.1);
             // box-shadow:  rgba(0,0,0,0.7);
             border:5px solid black;
-          }
-} 
+        }
+        -webkit-filter: contrast(150%);filter: contrast(130%);
+    } 
 
 }

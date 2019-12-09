@@ -49,12 +49,16 @@
             }
         }
        &:hover {
-        -webkit-transform: rotateZ(-30deg);
-        -ms-transform: rotateZ(-20deg);
-        transform: rotateZ(-10deg);
-        color: black;
-        z-index: 1000;
-        box-shadow: 0 0 10px black;
+        // -webkit-transform: rotateZ(-30deg);
+        // -ms-transform: rotateZ(-20deg);
+        // transform: rotateZ(-10deg);
+        // color: black;
+        // z-index: 1000;
+        // box-shadow: 0 0 10px black;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);        
+
+        
        }
        
     }
@@ -75,8 +79,7 @@
         height: 100%;
         top: 50%; left: 50%;
         transform: translate(-50%, -50%);
-
-       
-
-        }
     }
+
+    
+}
