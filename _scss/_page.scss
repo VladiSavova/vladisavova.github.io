@@ -137,6 +137,8 @@
         @include bp(desktop) {
             display: flex;
             justify-content: space-between;
+            margin-left: 1em;
+            
         }
        
         @include bp(mobile){
@@ -147,6 +149,8 @@
     .direct-message {
         width: 40%;
         margin-top: 1.5em;
+        margin-left: 5em;
+        margin-right: -2em;
         @include bp(mobile) {
             width: 70%;
             margin: auto;
