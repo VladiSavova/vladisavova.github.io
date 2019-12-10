@@ -1,6 +1,5 @@
 body {
-    background: rgba(141, 70, 255, 0.151);
-    
+    background: rgb(238, 238, 238);
 }
 
 .site {
@@ -23,59 +22,42 @@ body {
 
 .site-branding h1 a{
 	text-decoration: none;
+	font-family: 'Lexend Tera', sans-serif;
+	color: black;
 }
 
-.card {
-    border: 2px solid #CCC;
-}
+// .card {
+//     border: 2px solid #CCC;
+// }
 
-.card p {
-    display: none;
-}
+// .card p {
+//     display: none;
+// }
 
-.card p:first-of-type {
-    display: block;
-}
+// .card p:first-of-type {
+//     display: block;
+// }
 
-.card .button .less {
-    display: none;
-}
+// .card .button .less {
+//     display: none;
+// }
 
-input:checked + .card p {
-    display: block;
-}
+// input:checked + .card p {
+//     display: block;
+// }
 
-input:checked + .card .button .more {
-    display: none;
-}
+// input:checked + .card .button .more {
+//     display: none;
+// }
 
-input:checked + .card .button .less {
-    display: inline;
-}
-
-
-.site-branding h1:hover{
-	// transition: transform 3s, opacity 1s;
-    @include bp(mobile) {
-        
-    }
-
-    @include bp(desktop) {
-		
-        color: black;
-		text-shadow: 0 0 10px black;
-		// transform: scale(1.4);
-		
-	
-    }
-
-   
-}
+// input:checked + .card .button .less {
+//     display: inline;
+// }
 
 //css for header media
 
 .site-media {
-	min-height: 50vh;
+	min-height: vh;
 	overflow: hidden;
 	background-position: center;
 	background-size: cover;
@@ -144,68 +126,6 @@ input:checked + .card .button .less {
 .site-media  p.first {
 	padding-left: 3em;
 }
-
-
-// css for footer
-.social {
-	display: flex;
-	
-}
-
-.social li {
-	display: block;
-	list-style: none outside;
-	margin-right: 1em;
-}
-
-.social a {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #000;
-	border-radius: 50%;
-	background: rgba(255,255,255,0.5);
-	width: 2.8em;
-	height: 2.8em;
-	line-height: 1;
-	transition: background 0.2s ease-in;
-}
-
-.social a:hover {
-	background: rgba(255,255,255,0.9);
-}
-
-.site-footer .site-wrapper {
-	padding: 2em 0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	font-size: 1.2em;
-	@include bp(mobile) {
-		width: 100%;
-	}
-}
-
-.site-footer .social a {
-	background: rgba(0,0,0,0.3);
-	color: #FFF;
-}
-
-
-.site-footer .site-wrapper p {
-	opacity: 0.4;
-	transition: opacity 0.3s ease-in;
-
-}
-
-.site-footer:hover .site-wrapper p {
-	opacity: 0.8;
-}
-
-.site-footer .site-wrapper p:first-child {
-	font-size: 1.2em;
-}
-
 
 
 // css for site-main title
