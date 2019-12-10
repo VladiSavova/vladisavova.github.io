@@ -1,11 +1,12 @@
 .site-footer .site-wrapper {
-    padding: 1.5em 0;
+    padding: 0.5em 0;
     padding-bottom: 0.2em;
     padding-right: 1em;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	font-size: 1.2em;
+    font-size: 1.2em;
+
 }
 
 // .site-footer .social a {
@@ -62,7 +63,7 @@
 }
 
 .site-footer {
-    background: coral;
+    background: grey;
 }
 
 .social {
@@ -90,5 +91,77 @@
 
 .social a:hover {
 	background: rgba(255,255,255,0.9);
+}
+
+//css footer from layout.scss
+.social {
+    display: flex;
+	margin-right: 3em;
+}
+
+.social li {
+	display: block;
+	list-style: none outside;
+	margin-right: 1em;
+}
+
+.social a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+	border-radius: 50%;
+	background: rgba(255,255,255,0.5);
+	width: 2.8em;
+	height: 2.8em;
+	line-height: 1;
+	transition: background 0.2s ease-in;
+}
+
+.social a:hover {
+	background: rgba(255,255,255,0.9);
+}
+
+.site-footer .site-wrapper {
+	padding: 2em 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.2em;
+	@include bp(mobile) {
+		width: 100%;
+	}
+}
+
+.site-footer .social a {
+	background: rgba(0,0,0,0.3);
+	color: #FFF;
+}
+
+
+.site-footer .site-wrapper p {
+	opacity: 0.4;
+	transition: opacity 0.3s ease-in;
+
+}
+
+.site-footer:hover .site-wrapper p {
+	opacity: 0.8;
+}
+
+.site-footer .site-wrapper p:first-child {
+	font-size: 1.2em;
+}
+
+// css for site-main title
+main.site-main{
+
+	padding-bottom: 0.5em;
+}
+
+
+.site-header.site-branding {
+	display: flex;
+	flex-wrap: wrap;
 }
 

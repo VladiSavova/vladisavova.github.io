@@ -1,11 +1,5 @@
 form {
-    @include bp(mobile) {
-        width: 80%;
-    }
-    label {
-
-    }
-
+   
     textarea,
     input[type="text"],
     input[type="tel"],
@@ -22,18 +16,22 @@ form {
             border-color: grey;
 
             & + label {
-                color: darkgrey;
+                color: rgb(75, 72, 72);
             }
         }
     }
 
+    textarea {
+        margin-bottom: 1em;
+    }
+
     fieldset {
         display: block;
-        width: 100%;
+        width: 40%;
         border: 1px solid #CCC;
         padding: 2rem;
         margin-bottom: 2em;
-        
+      
         legend {
             padding: 0 1em;
             font-weight: bold;
@@ -44,12 +42,12 @@ form {
     .field {
         display: flex;
         flex-direction: column;
-        padding-bottom: 1em;
+        // padding-bottom: 1em;
 
         label {
             order: 1;
             display: block;
-            padding-bottom: 1em;
+            padding-bottom: 0;
         }
 
         input {
@@ -57,12 +55,11 @@ form {
         }
 
         &.submit {
-
             
             input {
                 display: block;
                 border: 1px solid #CCC;
-                background-color: grey;
+                background-color: rgb(73, 71, 71);
                 color: #000;
                 padding: 0.5em 0.8em;
                 text-align: center;

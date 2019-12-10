@@ -3,10 +3,19 @@
     justify-content: center;
     padding-bottom: 2em;
     padding-top: 1.5em;
+    @include bp(mobile){
+        flex-wrap: wrap;
+        padding-bottom: 2em;
+    }
 
     .my_info {
         padding: 0 2em;
         margin-right: 3em;
+
+         @include bp(mobile) {
+             padding-top: 3em;
+         }
+          
     }
     
     img {
@@ -15,6 +24,8 @@
         width: 13em;
         height: 13em;
         transition: ease-in 0.4s;
+        
+       
 
         &:hover {
             transition: ease-in 0.4s;
@@ -27,6 +38,12 @@
         text-align: center;
         padding-bottom: 0.2em;
         padding-top: 0.5em;
+        font-weight: bold;
+
+        @include bp(mobile){
+            padding-bottom: 1em;
+            padding-top: 1em;
+        }
     }
 }
 
@@ -35,10 +52,19 @@
     justify-content: center;
     padding-bottom: 2em;
     padding-top: 1.5em;
+    
+    @include bp(mobile){
+        flex-wrap: wrap;
+        padding-bottom: 2em;
+    }
 
     .my_info2 {
         padding: 0 2em;
         margin-right: 2em;
+
+        @include bp(mobile) {
+            padding-top: 3em;
+        }
     }
     
     img {
@@ -58,6 +84,11 @@
     p {
         text-align: center;
         padding-bottom: 0.2em;
+
+        @include bp(mobile){
+            padding-bottom: 1em;
+            padding-top: 1em;
+        }
     }
 }
 
