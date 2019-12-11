@@ -23,6 +23,12 @@
         p {
         margin: 0;
         padding-bottom: 0.3em;
+        opacity: 0.7;
+
+        &:hover {
+            opacity: 1.4;
+            cursor: pointer;
+        }
         }
 
         h5 {
@@ -61,7 +67,7 @@
         .inner {
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
-            opacity: 0.8;
+            opacity: 0.9;
 
             &:hover {
                 opacity: 1.01;
@@ -84,6 +90,10 @@
 }
 
 .story-info:nth-child(even) .personal-info {
-	order: 2;
+    order: 2;
+    
 }
 
+.story-info:nth-child(even) .ar-box {
+    margin-left: 2em;
+}
