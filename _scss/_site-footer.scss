@@ -17,7 +17,6 @@
 	
 	li {
 		display: block;
-		list-style: none outside;
 		margin-right: 1em;
 
 		a {
@@ -31,7 +30,7 @@
 			height: 2.8em;
 			line-height: 1;
 			transition: background 0.2s ease-in;
-			list-style: none outside;
+			text-decoration: none;
 		}
 	}
 }
