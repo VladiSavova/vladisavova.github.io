@@ -1,19 +1,33 @@
 .site-footer {
 
-	background-color: rgb(189, 189, 189);
-
 	.site-wrapper {
 		// padding: 1em 0;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		font-size: 1em;	
+		background-color: rgb(189, 189, 189);
+		height: 6em;
+
+		@include bp(mobile){
+			display: flex;
+			flex-wrap: wrap;
+			height: auto;
+		}
 	}
 }
 
 .social {
 	display: flex;
 	padding: 1.5em;
+
+	@include bp(mobile){
+		display: flex;
+		justify-content: center;
+		margin-bottom: 2em;
+		margin-top: -3em;
+		margin-left: 6em;
+	}
 	
 	li {
 		display: block;

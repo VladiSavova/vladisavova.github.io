@@ -11,14 +11,14 @@
     font-weight: bold;
 }
 .about p {
-    transition: ease-in 0.6s;
+    // transition: ease-in 0.6s;
     margin-bottom: -2.5em;
     margin-top: 1em;
 }
-.about p:hover {
-    transition: ease-in 0.6s;
-    transform: scale(1.02);
-}
+// .about p:hover {
+//     transition: ease-in 0.6s;
+//     transform: scale(1.02);
+// }
 .about p.first {
     padding-top: 1em;
 }
