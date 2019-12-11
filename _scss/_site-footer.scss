@@ -8,6 +8,7 @@
 		font-size: 1em;	
 		background-color: rgb(189, 189, 189);
 		height: 6em;
+		padding-bottom: 0;
 
 		@include bp(mobile){
 			display: flex;
@@ -55,6 +56,7 @@
 }
 
 .info {
+	
 	margin-bottom: 1em;
 	margin-left: 2em;
 	
