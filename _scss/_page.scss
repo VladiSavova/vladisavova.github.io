@@ -37,6 +37,7 @@
         @include bp(mobile){
             display: inline;
             margin: auto;
+            align-content: center;
         }
     }
     .direct-message {
@@ -46,8 +47,8 @@
         margin-right: -2em;
         @include bp(mobile) {
             width: 70%;
-            margin: auto;
-           
+            // margin: auto;
+            margin-left: -1em;
         }
     
         .field {

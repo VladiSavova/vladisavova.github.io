@@ -4,12 +4,17 @@ body {
 
 .site {
     max-width: var(--layout-width, 75rem);
-    margin: 0 auto;
+	margin: 0 auto;
+	
+	@include bp(mobile) {
+        padding: 1.5em;
+    }
+    
 }
 
 .site-header {
     @include bp(mobile) {
-        
+       
     }
     
     @include bp(desktop) {
@@ -40,6 +45,11 @@ body {
 	justify-content: center;
 	padding: 2em 0;
 	margin-bottom: 3em;
+
+	@include bp(mobile) {
+		margin-bottom: 1em;
+		margin-top: 1.5em;
+	}
 }
 
 
@@ -70,7 +80,10 @@ body {
 	padding-top: 2rem;
 	padding-bottom: 5rem;
 	
-    
+    @include bp (mobile) {
+		padding-left: 3em;
+		padding-right: 3em;
+	}
 
 	@include bp(desktop) {
         padding-right: 10em;
