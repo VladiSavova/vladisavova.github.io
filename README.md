@@ -1,5 +1,5 @@
 # vladisavova.github.io
-This is My project written on Jekyll for Css-advenced SoftUni course. 
+This is My project written on Jekyll for CSS-ADVANCED SoftUni course. 
 
 # Project Assignment for the [CSS Advanced Course @ SoftUni](https://softuni.bg/trainings/2427/css-advanced-july-2019)
 
