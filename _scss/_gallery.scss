@@ -18,6 +18,7 @@
         .figure-6{
             grid-column: span 2;
         }
+       
     }
 }
     
@@ -31,7 +32,9 @@
     opacity: 0.7;
     transition: transform 1s, opacity 1s;
     
-    
+    @include bp(tablet){
+        padding-top: 2em;
+    }
     
     &:hover {
         @include bp('desktop') {

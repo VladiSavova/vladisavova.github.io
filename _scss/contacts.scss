@@ -46,10 +46,20 @@
         margin-top: 1.5em;
         margin-left: 5em;
         margin-right: -2em;
+        // @include bp(mobile) {
+        //     width: 70%;
+        //     // margin: auto;
+        //     margin-left: -1em;
+        // }
+
         @include bp(mobile) {
-            width: 70%;
-            // margin: auto;
-            margin-left: -1em;
+            width: 90%;
+            margin: 0;
+            margin-left: 1.7em;
+            justify-content: center;
+            margin-bottom: 2em;
+            margin-top: 2em;
+           
         }
     
         .field {
