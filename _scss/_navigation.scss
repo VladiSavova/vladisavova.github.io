@@ -49,9 +49,14 @@
     }
 
     a {
+
+      padding-left: 2.5em;
+      padding-right: 2.5em;
+      padding-top: 0.3em;
+      padding-bottom: 0.3em;
       
         display: flex;
-        padding: 0.5em 1em;
+        // padding: 0.5em 1em;
         color: rgb(86, 86, 86);
         font-weight: 500;
         font-size: 1.1em;
