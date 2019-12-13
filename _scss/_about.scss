@@ -31,32 +31,62 @@
 
 .my_photo {
     display: flex;
-    justify-content: center;
-    padding-bottom: 2em;
-    padding-top: 1.5em;
+    margin-top: 2em;
+    justify-content: space-between;
+    // padding-bottom: 2em;
+    // padding-top: 1.5em;
     
-    @include bp(mobile){
-        flex-wrap: wrap;
-        padding-bottom: 2em;
+    // @include bp(mobile){
+    //     flex-wrap: wrap;
+    //     padding-bottom: 2em;
+    // }
+    @include bp(tablet) {
+        font-size: 0.8em;
+        justify-content: space-around;
+    }
+    @media (max-width: 700px) {
+        font-size: 0.7em;
+    }
+    @media (max-width: 520px) {
+        font-size: 0.6em;
+    }
+    @include bp(phone) {
+        display: block;
+        font-size: 1.2em;
     }
 
     .my_info {
-        padding: 0 2em;
-        margin-right: 3em;
+        // padding: 0 2em;
+        // margin-right: 3em;
 
-         @include bp(mobile) {
-            padding-top: 3em;
+        //  @include bp(mobile) {
+        //     padding-top: 3em;
+        // }
+        text-align: center;
+        margin-bottom: 4em;
+
+        &:nth-child(2) {
+            transform: scale(1.15);
+            @include bp(phone) {
+                transform: scale(1);
+            }
         }
+
           
     }
     
     img {
+        // border-radius: 50%;
+        // box-shadow: 0 0 1.5em 0 rgba(black, 0.7);
+        // width: 13em;
+        // height: 13em;
+        // transition: ease-in 0.4s;
         border-radius: 50%;
-        box-shadow: 0 0 1.5em 0 rgba(black, 0.7);
-        width: 13em;
-        height: 13em;
-        transition: ease-in 0.4s;
-        
+        margin-bottom: 2em;
+        height: 15em;
+        width: 17em;
+        box-shadow: 0 0 2em 0.5em rgba(138, 137, 160, 0.7);
+        transition: ease-in 0.3s;
        
 
         &:hover {
@@ -123,4 +153,5 @@
         }
     }
 }
+
 

@@ -57,8 +57,8 @@ body {
 .site-media:before {
 	display: block;
 	content: '';
-	// background: rgba(99, 107, 109, 0.8);
-	background: rgba(19,41,48,.45);
+	background: rgba(0, 10, 14, 0.45);
+	// background: rgba(19,41,48,.45);
 	position: absolute;
 	top: 0; 
 	left: 0; 
@@ -126,3 +126,5 @@ main.site-main{
 	display: flex;
 	flex-wrap: wrap;
 }
+
+
