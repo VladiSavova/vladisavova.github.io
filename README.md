@@ -1,6 +1,7 @@
 # vladisavova.github.io
 This is My project written on Jekyll for CSS-ADVANCED SoftUni course. 
-Project` theme is Tesla Inc company. It`s simple project witten by myself, inspired by Elon Musk`s biography and Tesla history and idea.
+Тhe theme of the project is Tesla Inc company. 
+It`s simple project witten by myself, inspired by Elon Musk`s biography and the history and idea of the Tesla company.
 
 # Project Assignment for the [CSS Advanced Course @ SoftUni](https://softuni.bg/trainings/2427/css-advanced-july-2019)
 
